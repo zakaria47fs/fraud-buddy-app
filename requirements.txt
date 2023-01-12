@@ -1,0 +1,7 @@
+pymongo
+fastapi
+uvicorn
+pycryptodome
+pytz
+tqdm
+credit-card-checker
