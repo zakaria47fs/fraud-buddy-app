@@ -5,12 +5,12 @@ from datetime import datetime
 
 
 class BinValidatorObject(BaseModel):
-    issuing_countries_include: List[str]
-    issuing_countries_exclude: List[str]
-    issuing_brands_include: List[str]
-    issuing_brands_exclude: List[str]
-    instutions_include: List[str]
-    instutions_exclude: List[str]
+    issuing_countries_include: List[str] = []
+    issuing_countries_exclude: List[str] = []
+    issuing_brands_include: List[str] = []
+    issuing_brands_exclude: List[str] = []
+    #instutions_include: List[str] = ['']
+    #instutions_exclude: List[str] = ['']
 
 
 class RulesObject(BaseModel):
@@ -19,4 +19,3 @@ class RulesObject(BaseModel):
     luhn_check_enable: bool
     bin_validator_enable: bool
     bin_validator_options: BinValidatorObject
-    created_at: Optional[datetime]

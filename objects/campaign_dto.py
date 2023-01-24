@@ -8,4 +8,3 @@ class CampaignObject(BaseModel):
     campaign_id: int
     name: str
     rule_id: int
-    created_at: Optional[datetime]

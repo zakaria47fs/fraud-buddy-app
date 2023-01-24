@@ -7,3 +7,8 @@ from datetime import datetime
 class CardValidateRequestObject(BaseModel):
     campaign_id: int
     card_number: int
+
+
+class CardValidateResponseObject(BaseModel):
+    valid: bool
+    

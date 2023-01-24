@@ -26,7 +26,7 @@ class MongoService:
         return self._database[collection_name].find_one({"_id": item_id})
 
     def get_all_items_db(self, collection_name):
-        self._database[collection_name].find({})
+        return self._database[collection_name].find({})
 
     def filter_items_db(self, collection_name, filter):
         return self._database[collection_name].find(filter)
